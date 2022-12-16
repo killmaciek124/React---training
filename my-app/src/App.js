@@ -1,3 +1,4 @@
+/*
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,22 @@ function App() {
           Learn React
         </a>
       </header>
+    </div>
+  );
+}
+
+export default App;
+*/
+
+import ExpenseItem from "./components/ExpenseItem";
+
+// NOTE : FORMAT DOCUMENT SHORTCUT => CTRL + SHIFT + I/L 
+function App() {
+  return (
+    <div>
+      <h2>Let's get started!</h2>
+      <p>eta sabaka!</p>
+      <ExpenseItem></ExpenseItem>
     </div>
   );
 }
