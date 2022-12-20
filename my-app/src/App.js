@@ -1,40 +1,31 @@
-/*
-import logo from './logo.svg';
-import './App.css';
+import Expenses from "./components/Expenses/Expenses";
+import Card from "./components/UI/Card";
+import NewExpense from "./components/NewExpense/NewExpense";
 
+// NOTE : FORMAT DOCUMENT SHORTCUT => CTRL + SHIFT + I/L
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const expenses = [
+    { title: "Car Insurance", amount: 55, date: new Date(2002, 2, 25) },
+    { title: "Car Insurance", amount: 55, date: new Date(2002, 2, 25) },
+    { title: "Car Insurance", amount: 55, date: new Date(2002, 2, 25) },
+    { title: "Car Insurance", amount: 55, date: new Date(2002, 2, 25) },
+    { title: "Car Insurance", amount: 55, date: new Date(2002, 2, 25) },
+  ];
 
-export default App;
-*/
-
-import ExpenseItem from "./components/ExpenseItem";
-
-// NOTE : FORMAT DOCUMENT SHORTCUT => CTRL + SHIFT + I/L 
-function App() {
+  const addExpenseHandler = (expense) => {
+    console.log("In App");
+    console.log(expense);
+  };
   return (
     <div>
-      <h2>Let's get started!</h2>
-      <p>eta sabaka!</p>
-      <ExpenseItem></ExpenseItem>
+      <Card>PRZYKLAD CARDA! WSZYSTKIE CSS </Card>
+
+      {/* <div className="dupa"> nie dziala props</div>
+      <div className="card"> dziala props</div>
+      <div className="card i chuj">dziala props/ new EXPENSE</div> */}
+      <NewExpense onAddExpense={addExpenseHandler} />
+
+      <Expenses list={expenses}></Expenses>
     </div>
   );
 }
