@@ -45,7 +45,7 @@ function ExpenseForm(props) {
 
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount, // DODANY PLUS IDK CZEMU COS NAPRAWILO (string i numbers problem)
       date: new Date(enteredDate),
     };
     // console.log(expenseData);
@@ -84,6 +84,9 @@ function ExpenseForm(props) {
         />
       </div>
       <div className="new-expense__actions">
+        <button type="button" onClick={props.onCancel}>
+          CANCEL
+        </button>
         <button type="submit">Add Expense!</button>
       </div>
     </form>
