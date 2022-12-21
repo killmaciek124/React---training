@@ -7,12 +7,16 @@ import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
   const [enteredDate2, setEnteredDate2] = useState("");
+
   // DZIECKO EXPENSES
   const onChangeHandler = (event) => {
-    console.log(event.target.value); // nasza wartosc
+    console.log(event.target.value); // nasza wartosc CZYLI ROK KTORY WYBIERAMY
+    console.log("props" + props);
     // setEnteredDate2(event.target.value);
     // console.log("x" + enteredDate2);
     props.onLiftExample(event.target.value);
+    // tutaj ustal zmiane statea:
+    props.onCurrentChosenDate(event.target.value);
   };
 
   return (
