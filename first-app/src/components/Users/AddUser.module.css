@@ -1,0 +1,25 @@
+.input {
+    width: 50%;
+   margin: 2rem auto;
+   max-width: 40rem;
+    
+}
+
+form {
+    margin: 2rem 25%;
+}
+
+
+ label {
+display: block;
+}
+
+
+
+input {
+    width: 100%;
+}
+
+
+
+

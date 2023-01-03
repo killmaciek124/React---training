@@ -1,0 +1,10 @@
+1. Landing page: Username, Years => Add USER
+2. Jesli doda sie to pojawi sie paseczek z userem na dole (bez edycji&deleta)
+oraz zresetuja sie inputy do pustych
+3. Jesli dodam zly wiek, lub pusty wiek lub pusty age, to sciemni sie wszystko, 
+i wyskoczy okienko z bledem odpowiednim (i przycisk 'okay')
+(dwa errory: 1. age <0 oraz empty input)
+
+3 Stycznia journal: 
+1. Dodaj Carda = DONE 
+2. Dodam Errory na zly input po submicie = DONE (using sweetalert)
