@@ -8,6 +8,7 @@ const Swal = require("sweetalert2");
 const AddUser = (props) => {
   const [userName, setUserName] = useState("");
   const [userAge, setUserAge] = useState("");
+  // const [addingState, setAddingState] = useState(false);
 
   const changeAgeHandler = (event) => {
     setUserAge(event.target.value);
@@ -33,6 +34,7 @@ const AddUser = (props) => {
       name = true;
       console.log("dobry name");
     }
+    // tego switcha case'a mozna przeniesc do componenta z warningami (clean code)
     switch (true) {
       case age === false && name === false:
         Swal.fire({
@@ -62,38 +64,39 @@ const AddUser = (props) => {
           confirmButtonText: "Cool",
         });
         break;
-      default:
+      default: // dodajemy do listy userow
+        // useless narazie
         // console.log("Wszystko git!");
+        props.onAddUser(userName, userAge);
+        setUserAge("");
+        setUserName("");
+
         Swal.fire({
           title: "Dodano!",
           confirmButtonText: "Cool",
         });
     }
-
-    //setUserAge(""); // + value na inpucie
-    //setUserName("");
   };
   return (
-    <Card className={classes.input}>
-      <form onSubmit={submitHandler}>
-        <label>Username</label>
-        <input
-          value={userName}
-          type="text"
-          onChange={changeNameHandler}
-        ></input>
-        <label>Age</label>
-        <input
-          value={userAge}
-          type="number"
-          onChange={changeAgeHandler}
-        ></input>
-        <Button type="submit" />
-      </form>
-      {/* <div>
-        {userAge > 0 && <AddSingleUser name={userName} age={userAge} />}
-      </div> */}
-    </Card>
+    <div>
+      <Card className={classes.input}>
+        <form onSubmit={submitHandler}>
+          <label>Username</label>
+          <input
+            value={userName}
+            type="text"
+            onChange={changeNameHandler}
+          ></input>
+          <label>Age</label>
+          <input
+            value={userAge}
+            type="number"
+            onChange={changeAgeHandler}
+          ></input>
+          <Button type="submit" />
+        </form>
+      </Card>
+    </div>
   );
 };
 

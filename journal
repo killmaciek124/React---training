@@ -25,6 +25,17 @@ KIEDY SKONCZE KURS?: 15 STYCZEN (1 SEKCJA DZIENNIE) (jesli sekcja krotka to prac
 
 DO PRZEGADANIA Z JACKIEM?:
 
-1. Czy isc na studia?
+1. Czy isc na studia? (moze skonczyc semestr i potem dziekanka)
 2. Tricki VSCODE np pare kursorow, szybsze strzalki w bok
 3. Bardziej socjalizujace carrer pathy (+ tester oprogramowania przegadaj) !
+
+NOTE:
+
+A: addition of a file
+D: deletion of a file
+U: file is unmerged (you must complete the merge before it can be committed)
+C: copy of a file into a new one
+M: modification of the contents or mode of a file
+R: renaming of a file
+T: change in the type of the file
+X: "unknown" change type (most probably a bug, please report it)
