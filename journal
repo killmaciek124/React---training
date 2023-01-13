@@ -10,24 +10,17 @@ Summary React:
 
 5. Lifting the state up (przekazywanie danych z childa do parenta i potem gdzies indziej lub nie)
 6. Jesli chcemy miec miejsce w ktorym zmieniamy jakies dane (zmienna) TO UZYWAMY STATEA!
+7. Reusable components
 
 TIP!: Wysylaj tacie na messku na biezaco uklady strony, kolory itp
 TIP2!: React course na 1.25x optymalnie imo
-
+fyiifytfyiytityuhjblknljhgfdszddfghjkgdsetrdtfyghjiygdsrhdtfjyguhijoklkikjhgvfcdxstsreytdfy
 KIEDY SKONCZE KURS?: 15 STYCZEN (1 SEKCJA DZIENNIE) (jesli sekcja krotka to pracuj nad cukiernia)
-
-1. niedziela (25 grudnia)- sekcja 8
-2. poniedzialek, sekcja 9
-3. wtorek sekcja 10
-   3.5 sroda krakow
-4. czwartek sekcja 11
-5. ...
 
 DO PRZEGADANIA Z JACKIEM?:
 
-1. Czy isc na studia? (moze skonczyc semestr i potem dziekanka)
-2. Tricki VSCODE np pare kursorow, szybsze strzalki w bok
-3. Bardziej socjalizujace carrer pathy (+ tester oprogramowania przegadaj) !
+1. Czy isc na studia? (moze skonczyc semestr i potem dziekanka)(kasia borodo linkedin)
+2. Bardziej socjalizujace carrer pathy (+ tester oprogramowania przegadaj) !
 
 NOTE:
 
@@ -39,3 +32,31 @@ M: modification of the contents or mode of a file
 R: renaming of a file
 T: change in the type of the file
 X: "unknown" change type (most probably a bug, please report it)
+
+TIP:
+
+1. Szukaj meet-up'ów!
+2. Wyslij pull request'a Jackowi
+
+Poniedzialek 9.01 tasks:
+
+1. Zrobilem prawie calą polowke dlugiego modulu
+   (git bo byl ciezki)
+
+PIATEK 13.01 tasks:
+HOOKS:
+
+1. Stworz nowy plik reactowy i przekopiuj wszystko z hook-app
+2. Sprobouj stworzyc swoj hook wedlug kursu i skoncz moduł (you can learn slower, do more practice!)
+   I NEXT MODUŁ !
+
+JUST DO: Otworz pull requesta - Jackowi
+
+tips:
+
+1. tab complition
+2. ctrl + strzaleczki
+3. alt + mouse1 , kursosryrryry kilka
+4. alt + mouse1 => cursor w konsoli
+5. ctrl + 'w' kasuje slowa w konsoli
+6. Use source control (diff's)

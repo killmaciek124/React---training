@@ -9,4 +9,4 @@ i wyskoczy okienko z bledem odpowiednim (i przycisk 'okay')
 1. Dodaj Carda = DONE 
 2. Dodam Errory na zly input po submicie = DONE (using sweetalert)
 3. Jesli dobry input to dodaje na dole userow 
-(stworzyc liste userow  i wyswietlic) = 
+(stworzyc liste userow  i wyswietlic) = DONE 

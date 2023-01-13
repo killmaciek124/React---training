@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddUser from "./components/Users/AddUser";
 import UsersList from "./components/Users/UsersList";
+// import Wrapper from "./components/Helpers/Wrapper";
 
 function App() {
   const [userList, setUserList] = useState([]);
@@ -15,14 +16,14 @@ function App() {
     });
   };
   return (
-    <div>
+    <React.Fragment>
       <AddUser
         users={userList}
         onAddUser={addUserHandler}
         onAddingState={setAddingState}
       />
       {addingState === true && <UsersList users={userList}></UsersList>}
-    </div>
+    </React.Fragment>
   );
 }
 

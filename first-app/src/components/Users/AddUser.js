@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
+import ReactDOM from "react-dom";
 //SWEETALERT:
 const Swal = require("sweetalert2");
+
+const PortalTest = (props) => {
+  return <div className="portalowiec">PORTAL TEST</div>;
+};
 
 const AddUser = (props) => {
   const [userName, setUserName] = useState("");
@@ -31,6 +36,7 @@ const AddUser = (props) => {
     }
     let name = false;
     if (userName.length > 0) {
+      // dodaj .trim() (usuwa blank spaces)
       name = true;
       console.log("dobry name");
     }
@@ -78,7 +84,7 @@ const AddUser = (props) => {
     }
   };
   return (
-    <div>
+    <React.Fragment>
       <Card className={classes.input}>
         <form onSubmit={submitHandler}>
           <label>Username</label>
@@ -94,9 +100,14 @@ const AddUser = (props) => {
             onChange={changeAgeHandler}
           ></input>
           <Button type="submit" />
+          {/* PRZYKLAD PORTALA  */}
+          {ReactDOM.createPortal(
+            <PortalTest />,
+            document.getElementById("portal-test-root")
+          )}
         </form>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 
