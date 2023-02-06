@@ -12,15 +12,9 @@ Summary React:
 6. Jesli chcemy miec miejsce w ktorym zmieniamy jakies dane (zmienna) TO UZYWAMY STATEA!
 7. Reusable components
 
-TIP!: Wysylaj tacie na messku na biezaco uklady strony, kolory itp
-TIP2!: React course na 1.25x optymalnie imo
-fyiifytfyiytityuhjblknljhgfdszddfghjkgdsetrdtfyghjiygdsrhdtfjyguhijoklkikjhgvfcdxstsreytdfy
-KIEDY SKONCZE KURS?: 15 STYCZEN (1 SEKCJA DZIENNIE) (jesli sekcja krotka to pracuj nad cukiernia)
-
 DO PRZEGADANIA Z JACKIEM?:
 
-1. Czy isc na studia? (moze skonczyc semestr i potem dziekanka)(kasia borodo linkedin)
-2. Bardziej socjalizujace carrer pathy (+ tester oprogramowania przegadaj) !
+1. Czy isc na studia? (moze skonczyc semestr i potem dziekanka)(kasia borodo linkedin) (moze nie warto konczyc studiow tylko zmienic! (studia najlepszy okres w zyciu)) (łatwiej na staż ze studiami)
 
 NOTE:
 
@@ -33,26 +27,9 @@ R: renaming of a file
 T: change in the type of the file
 X: "unknown" change type (most probably a bug, please report it)
 
-TIP:
-
-1. Szukaj meet-up'ów!
-2. Wyslij pull request'a Jackowi
-
-Poniedzialek 9.01 tasks:
-
-1. Zrobilem prawie calą polowke dlugiego modulu
-   (git bo byl ciezki)
-
-PIATEK 13.01 tasks:
-HOOKS:
-
-1. Stworz nowy plik reactowy i przekopiuj wszystko z hook-app
-2. Sprobouj stworzyc swoj hook wedlug kursu i skoncz moduł (you can learn slower, do more practice!)
-   I NEXT MODUŁ !
-
-JUST DO: Otworz pull requesta - Jackowi
-
 tips:
+
+WSZYSTKO PONIZEJ, jest mega ważne, rekruter do pracy bedzie patrzyl czy korzystasz z tab complition, albo jakie masz commity w repo.
 
 1. tab complition
 2. ctrl + strzaleczki
@@ -60,3 +37,29 @@ tips:
 4. alt + mouse1 => cursor w konsoli
 5. ctrl + 'w' kasuje slowa w konsoli
 6. Use source control (diff's)
+7. Commity: start with verb ;-), albo /first-app (sciezka):
+   commits examples:
+   food-app: initial commit //
+   food-app/public: replace favicon.ico
+
+IMPORTANT NOTES:
+
+1. Oglądaj summary modułu przed przerobieniem modułu!
+2. Szukaj meet-up'ów!
+
+TASK : Infopacka zrob o szkolach za granica!
+
+TECH TIP: (!!!)
+
+- Znajdź idee na stworzenie strony która rozwiąże jakiś problem (pewnej grupy ludzi). To da ci motywacje do nauki Reacta + stworzenia strony (ta sama logika jak nauka rosyjskiego, effortless)
+
+LongTerm Task:
+
+1. Zrób swoją stronke (HomePage, ładne commity, admin page itp) żeby zakorzenic wiedze na temat reacta, routingu i reduxa (reduxtoolkit). Dodaj tam te wszystkie ważne rzeczy i potem ucz się nowych na kursie i na bieżąco dodawaj żeby nie zapomnieć!.
+   Ogladaj summary modulow jako przypominajka i przeczytaj notatki
+
+2. KURS: Next.js i typescript równolegle z HomePage'em. Reszte możesz zostawić na później (AUTH, ANIMATIONS ITP)
+
+a) step nr 1 na dzisiaj:
+plan homepage'a, colory, rozklad elementow i nava, inspiracja
+zaloz repo a w nim notatki na ten temat

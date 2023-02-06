@@ -1,0 +1,84 @@
+ALL COMMANDS: 
+
+Create react app:
+
+npx create-react-app my-app
+npm start
+npm install 
+
+Routing: 
+
+npm install react-router-dom
+
+Redux Toolkit: 
+npm install @reduxjs/toolkit
+
+Hooks List: 
+customHooks,
+useState,
+useParams, 
+useEffect, 
+useContext
+useSelector, 
+useDispatch,
+useReducer,
+useMemo, useCallback -> Optimization
+////////////////////////////
+REDUX: 
+(
+npm install @reduxjs/toolkit
+)
+(store (a w nim dane/state'y + reducery/funkcje), subscribction, )
+lekcja 241 na kursie
+////////////////////////////
+useSlice
+useSelector -> wyciagamy dane ze stora (state)
+createSlice -> tworzymy slice a w nim reducery czyli rozne funkcje, 
+ktorych uzywamy za pomoca useSlice (reduxtoolkit)
+configureStore -> (reduxtoolkit)
+useDispatch -> funckja dispatchujaca nasze reducery (funkcje w storze)
+someSlice.actions => obiekt wszystkich naszych reducerów usage:
+export const sliceActions = someSlice.actions (w storze)
+import sliceActions
+dispatch(sliceActions.increase(payload)) // increase to jakis reducer
+
+
+///////////////////////
+ROUTING: (import from react-router-dom) (really important lecture)
+(configure routes, loading components with different paths, errors,
+data fetching with actions and loaders, submission, fetch data 
+behind the scenes (useFetcher), deffering (showing loading state or 
+showing some data before other data is there) )
+///////////////////////////////
+CreateBrowserRouter, 
+RouterProvider,
+useLoaderData,
+useNavigation => state Nawigacji np submitting 
+useNavigate(some-url) => przenosi nas do some-url
+useRouteError,
+useRouteLoaderData, 
+useSubmit,
+useActionData => uzywamy do pokazania na stronie invalid inputow + ...
+.. dostajemy dane uzyte z action (closest action)
+useFetcher => Tool you use to trigger loader or 
+action without loading a page(route)
+
+defer -> uzywamy z Awaitem i Suspensem (routing2-app/src/pages/Events.js)
+W skrocie defer sluzy do wywolywania funkcji (np kilku albo jednej) asynchronicznych
+(tip: mozna uzyć awaita w obiekcie deferowym)
+(defer uzywamy żeby pokazac jakies okienko 'loading..' kiedy mamy wolny backend)
+
+Await ->  <Await resolve={events} > </Await> => Await to znacznik ktory
+czeka az splyną do niego dane (events) (events to dane z jakiegos promise)
+i dopiero wtedy renderuje swoj srodek
+Suspense (import from 'react') -> wrapper ktory renderuje nam jakis element
+czekajac na element z Awaita => np. :
+<Suspense fallback={<p>Loading Dupa...<p>} >
+<Await resolve={events}>DUPA<Await>
+<Suspense>
+
+Alerty, Errory: 
+a) sweetalert2! => https://sweetalert2.github.io/
+
+tip: 
+console.loguj {request, params} itp

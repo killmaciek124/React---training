@@ -3,9 +3,17 @@ import { useState } from "react";
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
 import CartProvider from "./store/CartProvider";
-// task :
-// zrob Carda ktory obejmuje mealsList (border-radius, bgc,)
-// i dodaj wiecej danych do MealsElementow(cena itp)
+// TASKS :
+/* 
+1. Add Order Form (checkout)
+2. Submitting orders to data base (firebase) (czy mozna zamowic w ogole
+  .. takie ilosci jedzenia)
+3. Fetching meals from data baase 
+
+
+
+*/
+
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
 
