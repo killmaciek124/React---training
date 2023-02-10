@@ -80,5 +80,4 @@ czekajac na element z Awaita => np. :
 Alerty, Errory: 
 a) sweetalert2! => https://sweetalert2.github.io/
 
-tip: 
-console.loguj {request, params} itp
+t: Tą zmiane chce 
