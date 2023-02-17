@@ -81,3 +81,42 @@ Alerty, Errory:
 a) sweetalert2! => https://sweetalert2.github.io/
 
 t: Tą zmiane chce 
+
+GIT: 
+
+0) stage === add 
+
+1) origin/* = github
+
+2) orign/main = serwer (np to co na githubie/serwerze)(push,pull)
+
+3) git remote -v (pokazuje origina czyli github albo gitlab itp)
+
+4) history (historia shella, not git)
+
+5) sha commita -> nie przepisuj calego tylko pierwsze 3-6 znakow
+
+6) git merge jakis-branch (wywolane z maina) doslownie nam wszystko
+dodaje do maina z jakis-branch (jesli sa jakies diffy to source control)
+
+7) git push zawsze pushuje wszystkie commity (z wszystkich branchy 
+ponieważ branch to tylko łatka do commitow. Wszystkie commity sa w jednej 'zupie')
+
+
+a) range operations: (głownie dzialaja do origin/main czyli stanu serwerowego)
+
+git log => showing commits (q - wychodzimy z loga) 
+git log --stat => commits with changes
+git log jakis-branch/kod-sha-commita (sha => unikalny identfyfikator commita)
+git merge jakis-branch/kod-sha-commita
+git merge --abort (abort cofa poprzednią wykonaną operacje)
+
+b) point operations: 
+
+git cherry-pick kod-sha-commita => cherry pick = to samo co merge tylko na wybrany commit
+Source control => tam handluj diffy
+git show kod-sha-commita => pokazuje wybranego commita
+git cherry-pick --abort => uno reverse Card (cofa operacje poprzednia)
+
+IDEA: 
+QR z reflinkiem do homepage! I potem nosisz QR na koszulce
