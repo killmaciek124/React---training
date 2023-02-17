@@ -117,6 +117,8 @@ git cherry-pick kod-sha-commita => cherry pick = to samo co merge tylko na wybra
 Source control => tam handluj diffy
 git show kod-sha-commita => pokazuje wybranego commita
 git cherry-pick --abort => uno reverse Card (cofa operacje poprzednia)
+git rm <filename> => usuwa z gita i dysku
+git rm --cached <filename> => usuwa z gita
 
 IDEA: 
 QR z reflinkiem do homepage! I potem nosisz QR na koszulce
